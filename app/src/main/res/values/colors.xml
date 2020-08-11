@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="blue">#00A5FF</color>
+    <color name="ofwhite">#E7E3E3</color>
+    <color name="orange">#FF5722</color>
+
+
+
+
+
+
+
+
+    <color name="colorPrimary">#3b6978</color>
+    <color name="colorPrimaryDark">#204051</color>
+    <color name="colorPrimaryLight">#659498</color>
+
+    <color name="colorAccent">#659498</color>
+
+    <color name="textColorMain">#222222</color>
+    <color name="textColorLight">#323232</color>
+    <color name="textColorAlt">#f4f6ff</color>
+
+    <color name="background">#f4f6ff</color>
+
+    <color name="moneyPositive">#058C00</color>
+    <color name="moneyNegative">#bf0000</color>
+</resources>

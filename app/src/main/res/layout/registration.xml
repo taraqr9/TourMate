@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ofwhite"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/some"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/head"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/body"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_gravity="top|center"
+            android:background="@drawable/button_white"
+            android:gravity="center"
+            android:text="Tour Mate"
+            android:layout_marginBottom="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blue" />
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColorHint="@color/blue"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+            android:id="@+id/fullname_sign_ed"/>
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/blue"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+            android:id="@+id/email_sign_ed"/>
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/blue"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+            android:id="@+id/pass_sign_ed"/>
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="number"
+            android:textColorHint="@color/blue"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+            android:id="@+id/phone_sign_ed"/>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Gender : "
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male  "
+                android:textColor="@color/blue"
+                android:id="@+id/male_radio"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/blue"
+                android:id="@+id/female_radio"/>
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/button_blue"
+                android:text="Sign Up"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/pBar_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/signup"
+                android:layout_alignRight="@id/signup"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="27dp"
+                android:indeterminateDrawable="@drawable/progresbar"
+                android:visibility="invisible"
+                android:layout_marginRight="-53dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ? Login here"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginTop="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/login_sign"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

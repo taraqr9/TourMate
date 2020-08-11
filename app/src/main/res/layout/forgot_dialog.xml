@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ofwhite">
+
+    <TextView
+        android:id="@+id/some"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/head"/>
+
+
+    <LinearLayout
+        android:background="@drawable/body"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/button_white"
+            android:text="@string/tour_mate"/>
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="@color/blue"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+            android:id="@+id/email_forgotPass"
+            android:autofillHints="" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/submit_forgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="200dp"
+                android:background="@drawable/button_blue"
+                android:text="@string/submit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="200dp" />
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_blue"
+                android:text="@string/cancel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="200dp" />
+
+            <ProgressBar
+                android:id="@+id/pBar_F"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cancel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="27dp"
+                android:indeterminateDrawable="@drawable/progresbar"
+                android:visibility="invisible"
+                android:layout_marginRight="27dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
